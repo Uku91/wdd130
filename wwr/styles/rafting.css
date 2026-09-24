@@ -13,7 +13,7 @@ header,
 main,
 footer {
     width: 840px;
-    margin: auto 0;
+    margin: 0 auto;
 }
 
 h1,
@@ -44,7 +44,7 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
