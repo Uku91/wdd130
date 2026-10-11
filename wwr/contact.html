@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | White Water Rafting Adventures</title>
     <meta name="description"
-      content="Contact White Water Rafting Adventures to book an adventure, ask questions, or plan a company outing. You can reach us by phone, email, or contact form on our website.">
+      content="Contact White Water Rafting Adventures to book an adventure, ask questions, or plan a company outing.">
     <meta name="author" content="Undu Abraham Ukuma">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -31,7 +31,7 @@
                 <address>
                     <p>123 Manin River Street</p>
                     <p>Kolob, California</p>
-                    <p><a href="tel:+1999 999 9999">+1 999 999 9999</a> </p>
+                    <p><a href="tel:+19999999999">+1 999 999 9999</a> </p>
                     <p><a href="mailto:info@wwaterrafting.com">info@wwaterrafting.com</a></p>
                 </address>
             </div>
@@ -40,11 +40,14 @@
         <section class="map-and-form">
             <div class="map-container">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.123456789!2d-114.123456789!3d45.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDA3JzI0LjQiTiAxMTTCsDA3JzI0LjQiVw!5e0!3m2!1sen!2sus!4v1234567890"
-                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5727791.317444076!2d-114.143261!3d45.49451365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5358ffa885e499e9%3A0xd06b300515f78758!2sIdaho%2C%20USA!5e0!3m2!1sen!2sng!4v1791735216162!5m2!1sen!2sng"
+                  width="100" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  referrerpolicy="no-referrer-when-downgrade"
                   title="Map showing White Water Rafting Adventure location">
                 </iframe>
             </div>
+
             <!--Contact form section-->
             <section class="contact-form-section">
                 <h2>Send Us a Message</h2>
@@ -52,7 +55,9 @@
                     <!---contact name-->
                     <div class="form-group">
                         <label for="name">Your Name</label>
-                        <input type="text" id="name" placeholder="Enter your full name" required>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name"
+                          required>
+                        <label for="email">Your Email</label>
                         <input type="email" id="email" name="email" placeholder="Enter your Email"
                           required>
                     </div>
@@ -66,7 +71,7 @@
                                 Enquiry</label>
                             <label>
                                 <input type="radio" id="reservation" name="purpose"
-                                  value="suggestion">Reservation Question</label>
+                                  value="reservation">Reservation Question</label>
                             <label><input type="radio" id="suggestion" name="purpose"
                                   value="suggestion">Website
                                 Suggestion</label>
@@ -91,41 +96,63 @@
                     </div>
                 </form>
             </section>
+        </section>
 
-            <!--Employee Profiles section-->
-            <section class="employees">
-                <h2>We Are Here To Serve You</h2>
-                <div class="employee-grid">
-                    <figure>
-                        <img src="images/sarah-paul.jpg" alt="sarah paul, Lead River Guide">
-                        <figcaption> Sarah Paul <span>Lead River Guid</span></figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/mike-chen.jpg"
-                          alt="mike chen, Customer Experience Coordinator">
-                        <figcaption>Mike Chen <span>Customer Experience Coordinator</span>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/john-keneth.jpg" alt="john keneth, Operations Manager">
-                        <figcaption>John Keneth<span>Operations Manager</span></figcaption>
-                    </figure>
-                </div>
-            </section>
+        <!--Employee Profiles section-->
+        <section class="employees">
+            <h2>We Are Here To Serve You</h2>
+            <div class="employee-grid">
+                <figure>
+                    <img src="images/sarah-paul.jpg" alt="sarah paul, Lead River Guide">
+                    <figcaption> Sarah Paul <span>Lead River Guide</span></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/mike-chen.jpg"
+                      alt="mike chen, Customer Experience Coordinator">
+                    <figcaption>Mike Chen <span>Customer Experience Coordinator</span>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/john-keneth.jpg" alt="john keneth, Operations Manager">
+                    <figcaption>John Keneth<span>Operations Manager</span></figcaption>
+                </figure>
+            </div>
+        </section>
 
     </main>
 
     <footer>
-        <p>©2026💻 White Water Rafting Adventures 💻Undu Abraham Ukuma</p>
+        <!--Footer contents-->
+        <div class="footer-content">
 
-        <nav class="socialmedia">
-            <a href="https://www.facebook.com/undua1"><img src="images/facebook.png"
-                  alt="facebook"></a>
-            <a href="https://www.linkedin.com/in/undu-abraham-274bb61a1"><img
-                  src="images/linkedin.png" alt="linkedin"></a>
-            <a href="https://www.instagram.com/abrahamundu"><img src="images/instagram.png"
-                  alt="whatsapp"></a>
-        </nav>
+            <!--Copy right information-->
+            <div class="footer-info">
+                <p>©2026💻 White Water Rafting Adventures 💻Undu Abraham Ukuma</p>
+
+                <!---Site Map-->
+                <nav class="sitemap" aria-label="site map">
+                    <h3>Site Map</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="trips.html">Trips</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html#contact-form">Book Now</a></li>
+                        <li><a href="trips.html#faq">FAQs</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--Social media handles-->
+            <nav class="socialmedia" aria-label="Social media">
+                <a href="https://www.facebook.com/undua1"><img src="images/facebook.png"
+                      alt="facebook"></a>
+                <a href="https://www.linkedin.com/in/undu-abraham-274bb61a1"><img
+                      src="images/linkedin.png" alt="linkedin"></a>
+                <a href="https://www.instagram.com/abrahamundu"><img src="images/instagram.png"
+                      alt="instagram"></a>
+            </nav>
+        </div>
     </footer>
 </body>
 
